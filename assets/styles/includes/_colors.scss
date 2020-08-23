@@ -1,0 +1,56 @@
+
+// $color1 : #004D40; //teal darken-4
+// $color2 : #B71C1C; //red darken-4
+// $color3 : #B39DDB; //deep-purple lighten-3
+// $color4 : #311B92; // deep-purple darken-4
+
+$color1 : #6F2232; //red
+$color2 : #950740; // violet
+$color3 : #C3073F; // vivid pink
+$color4 : #1A1A1A; //black
+$color5 : #4E4E50; //gray
+$black : #000;
+$white : #fff;
+
+
+h1,h2,h3,h4,h5,h6{
+  color: $color1;
+}
+
+p{
+  color: $black;
+}
+
+
+.color1{
+  color: $color1 !important;
+}
+.color2{
+  color: $color2 !important;
+}
+.color3{
+  color: $color3 !important;
+}
+.color4{
+  color: $color4 !important;
+}
+.color5{
+  color: $color4 !important;
+}
+
+
+.bg-color1{
+  background-color: $color1 !important;
+}
+.bg-color2{
+  background-color: $color2 !important;
+}
+.bg-color3{
+  background-color: $color3 !important;
+}
+.bg-color4{
+  background-color: $color4 !important;
+}
+.bg-color5{
+  background-color: $color4 !important;
+}

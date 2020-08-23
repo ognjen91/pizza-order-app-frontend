@@ -1,0 +1,23 @@
+.theodorusPagination{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & .page-item{
+   & .page-link{
+     color: $color1;
+     // font-family: $primaryFont;
+   }
+
+    &.active .page-link{
+        background-color: rgba($color1, 0.7);
+        border: $color1;
+        color: #fff;
+        font-weight: 800;
+    }
+  }
+}
+
+.theodorusPagination .pagination{
+  margin: 0 !important;
+}

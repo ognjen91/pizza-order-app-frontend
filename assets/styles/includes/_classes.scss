@@ -1,0 +1,48 @@
+.noPointerEvents{
+  pointer-events: none;
+}
+
+.noListStyle{
+  list-style: none;
+}
+
+.noDecoration{
+  &:hover{
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.underline{
+  text-decoration: underline;
+}
+
+
+.flexCentered{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flexColumnCentered{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.cursorPointer{
+  cursor: pointer;
+}
+.cursorDefault{
+  cursor: default;
+}
+
+
+.rotated180{
+    -webkit-transform:rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}

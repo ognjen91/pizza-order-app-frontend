@@ -1,0 +1,38 @@
+.letter-spacing-1{
+  letter-spacing: 1px;
+}
+
+.letter-spacing-2{
+  letter-spacing: 2px;
+}
+
+// font-family: 'Abril Fatface', cursive;
+// font-family: 'Poppins', sans-serif;
+
+$primaryFont : 'Poppins', sans-serif; //texts
+$secondaryFont : 'Abril Fatface', cursive; //titles
+
+.font-primary{
+  font-family: $primaryFont !important;
+}
+
+.font-secondary{
+  font-family: $secondaryFont !important;
+}
+
+// .font-handwriting{
+//   font-family: $handwritingFong !important;
+//
+// }
+
+
+
+
+
+h1,h2,h3,h4,h5,h6{
+  font-family: $secondaryFont;
+}
+
+p{
+  font-family: $primaryFont;
+}

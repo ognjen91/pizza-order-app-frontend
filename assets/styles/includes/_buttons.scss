@@ -1,0 +1,78 @@
+
+.noHover{
+  &:hover{
+  border-color: inherit !important;
+  color: inherit !important;
+  background-color: inherit !important;
+  text-decoration: none;
+  }
+}
+
+
+//blue buttons
+.btn-theodorus{
+  border: 2px solid $black;
+  color: $black;
+  background-color: #fff;
+  font-family: $secondaryFont;
+  text-transform: uppercase;
+  // font-family: $primaryFont;
+  &:hover{
+    // color: #fff;
+    color: $black;
+    background-color: #fff;
+    text-decoration: none;
+
+  }
+
+}
+.btn-theodorus.light{
+  border: 2px solid #fff;
+  color: #fff;
+  background-color: rgba(#fff, 0);
+
+}
+
+
+.btn-theodorus.small{
+  font-size: .9rem;
+  padding: .2rem .2rem;
+  letter-spacing: 1px;
+
+  @media screen and (min-width: $md){
+    font-size: 1.05rem;
+  }
+  @media screen and (min-width: $lg){
+    padding: .2rem .3rem;
+    font-size: 1.5rem;
+  }
+
+}
+.btn-theodorus.medium{
+  font-size: 1rem;
+  padding: .2rem .2rem;
+  letter-spacing: 1px;
+
+  @media screen and (min-width: $md){
+    font-size: 1.1rem;
+  }
+  @media screen and (min-width: $lg){
+    padding: .2rem .3rem;
+    font-size: 1.35rem;
+  }
+
+}
+
+.btn-theodorus.big{
+  font-size: 1.8rem;
+  padding: .3rem .6rem;
+  letter-spacing: 2px;
+  @media screen and (min-width: $md){
+    padding: .3rem .8rem;
+    font-size: 2.1rem;
+  }
+  @media screen and (min-width: $lg){
+    font-size: 50px;
+    padding: .3rem 3.5rem;
+  }
+}

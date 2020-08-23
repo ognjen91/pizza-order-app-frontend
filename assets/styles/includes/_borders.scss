@@ -1,0 +1,47 @@
+$blub : 1px solid blue;
+$redb : 1px solid red;
+$greb : 1px solid green;
+$blab : 1px solid black;
+$yelb : 1px solid yellow;
+
+
+.blub{
+  border: $blub;
+}
+.redb{
+  border: $redb;
+}
+.greb{
+  border: $greb;
+}
+.blab{
+  border: $blab;
+}
+.yelb{
+  border: $yelb;
+}
+
+
+.border-color1{
+  border-color: $color1;
+}
+.border-color2{
+  border-color: $color2;
+}
+.border-color3{
+  border-color: $color3;
+}
+.border-color4{
+  border-color: $color4;
+}
+
+
+.border-1{
+  border-width: 1px;
+}
+.border-2{
+  border-width: 2px;
+}
+.border-3{
+  border-width: 3px;
+}
