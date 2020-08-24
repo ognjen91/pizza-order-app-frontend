@@ -6,10 +6,3 @@
 
   </div>
 </template>
-
-
-<script>
-
-
-
-</script>

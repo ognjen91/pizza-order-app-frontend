@@ -15,7 +15,7 @@
         <HomepageAboutUs />
       </v-flex>
 
-      
+
       <v-flex xs12 class='defaultSection'>
         <HomepageMostPopularContent />
       </v-flex>
@@ -34,6 +34,8 @@ import HomepageAboutUs from '@/components/homepage/HomepageAboutUs'
 export default {
   components: {
     HomepageCarousel
-  }
+  },
+
+
 }
 </script>

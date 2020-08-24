@@ -215,6 +215,10 @@ p {
   font-size: 2rem;
 }
 
+.removeItemIcon.inactive {
+  opacity: 0.5;
+}
+
 .defaultSection {
   padding: 3% 3%;
 }

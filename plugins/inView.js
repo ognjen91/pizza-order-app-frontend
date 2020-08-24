@@ -21,12 +21,27 @@ inView('.animated.fadeInUpElement')
         el.classList.add("fadeInUp");
     })
 
-inView('.animated.fadeLeftUpElement')
+inView('.animated.fadeInLeftElement')
     .on('enter', el => {
         el.classList.add("fadeInLeft");
     })
 
-inView('.animated.fadeLeftRightElement')
+inView('.animated.fadeInRightElement')
     .on('enter', el => {
         el.classList.add("fadeInRight");
+    })
+
+inView('.animated.slideInUpElement')
+    .on('enter', el => {
+        el.classList.add("slideInUp");
+    })
+
+inView('.animated.slideInLeftElement')
+    .on('enter', el => {
+        el.classList.add("slideInLeft");
+    })
+
+inView('.animated.slideRightElement')
+    .on('enter', el => {
+        el.classList.add("slideInRight");
     })

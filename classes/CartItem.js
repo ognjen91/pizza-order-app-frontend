@@ -1,9 +1,9 @@
 export default class CartItem {
 
 
-  constructor(pizzaId, size, context) {
-    this.cartIdentificator = new Date().getTime() + `-${pizzaId}` //will use (timestamp - pizzaId) as a heleper unique identificator
-    this.pizzaId = pizzaId
+  constructor(pizzaId, size, cartIdentificator = null, context = null) {
+    this.cartIdentificator = cartIdentificator? cartIdentificator : new Date().getTime() + `-${pizzaId}` //will use (timestamp - pizzaId) as a heleper unique identificator
+    this.id = pizzaId
     this.size = size
     this.context = context //so we can use vuex store now
     this.spices = {
@@ -22,14 +22,16 @@ export default class CartItem {
   addToCart(){
     this.context.commit('cart/ADD_ITEM', {
       cartIdentificator : this.cartIdentificator,
-      id : this.pizzaId,
+      id : this.id,
       size : this.size
     })
   }
 
   removeFromCart(){
-    if(this.existsInCart()) this.context.commit('cart/REMOVE_FROM_CART')(this.cartIdentificator)
+    if(this.existsInCart()) this.context.commit('cart/REMOVE_FROM_CART_BY_IDENTIFICATOR')(this.cartIdentificator)
   }
+
+
 
 
 

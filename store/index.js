@@ -16,7 +16,7 @@ export const mutations = {
 
 
 export const actions = {
-  async nuxtServerInit({dispatch}, {$axios}){
+  async nuxtServerInit({dispatch, commit}, {$axios}){
      await  dispatch('menu/loadPizzas', {}, {root:true})
   },
 }

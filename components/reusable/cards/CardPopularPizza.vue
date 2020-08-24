@@ -32,13 +32,24 @@
 
     <!-- SUBTITLE -->
     <v-card-subtitle class='pt-1'>
-      {{pizza.orders}} {{pizza.orders == 1? 'orders' : 'order'}} so far
+      {{pizza.orders}} {{pizza.orders !== 1? 'orders' : 'order'}} so far
     </v-card-subtitle>
 
     <!-- ACTIONS -->
     <v-card-actions>
           <!-- ADD TO CART -->
-          <v-btn text @click='showCartOptions = !showCartOptions'>Add to cart</v-btn>
+          <v-btn text @click='showCartOptions = !showCartOptions'>
+            <!-- show icon with badge if there is any item of any size of this pizza in the cart -->
+            <v-badge v-if="numberOfItemsOfTheTypeInCart" :content="numberOfItemsOfTheTypeInCart">
+              <v-icon>
+                mdi-cart-arrow-down
+              </v-icon>
+            </v-badge>
+            <!-- show icon without badge if there is no any items of any size of this pizza in the cart -->
+            <v-icon v-else>
+              mdi-cart-arrow-down
+            </v-icon>
+          </v-btn>
 
           <!-- GO TO THE PIZZA PAGE -->
           <nuxt-link
@@ -58,27 +69,19 @@
           <!-- SHOW DETAILS BUTTON -->
           <v-btn
             icon
-            @click="showDetails = !showDetails"
+            @click="showCartOptions = !showCartOptions"
+            v-show='showCartOptions'
           >
-            <v-icon>{{ showDetails ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+            <v-icon
+            >{{ showCartOptions ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
           </v-btn>
     </v-card-actions>
 
-    <!-- EXPANSION FOR PIZZA SHORT DESCRIPTION -->
-    <v-expand-transition>
-      <div v-show="showDetails">
-        <v-divider></v-divider>
-
-        <v-card-text>
-          {{pizza.shortDesc}}
-        </v-card-text>
-      </div>
-    </v-expand-transition>
 
     <!-- EXPANSION FOR CART OPTIONS -->
     <v-expand-transition>
       <div v-show="showCartOptions">
-        <CardCartPart :options="pizza.options" id="pizza.id" />
+        <CardCartPart :options="pizza.options" :id="pizza.id" />
       </div>
     </v-expand-transition>
 
@@ -97,9 +100,15 @@
     },
 
     data: () => ({
-      showDetails: false,
       showCartOptions: false,
     }),
+
+    computed : {
+      numberOfItemsOfTheTypeInCart(){
+        return this.$store.getters['cart/numberOfItemsOfSameTypeInCart'](this.pizza.id)
+      }
+
+    },
 
     methods : {
       addToCart(id){
