@@ -1,7 +1,7 @@
 <template>
   <v-row class=''>
     <v-col cols="12" sm="10">
-      <h1 class='text-center text-sm-left'>Most Popular Pizzas In Town</h1>
+      <h1 class='text-center text-sm-left animated fadeInUpElement'>Most Popular Pizzas In Town</h1>
     </v-col>
 
     <!-- get desired number of items -->
@@ -16,8 +16,6 @@
    </v-col>
 
 
-     <!-- </v-col> -->
-    </v-col cols="12">
 
     <v-col cols="12" class=''>
       <v-row class=''>
@@ -31,7 +29,7 @@
         :key="i"
         >
 
-            <PopularPizzaCard
+            <CardPopularPizza
             :pizza="pizza"
             />
 
@@ -49,11 +47,11 @@
 
 
 <script>
-import PopularPizzaCard from '@/components/reusable/PopularPizzaCard'
+import CardPopularPizza from '@/components/reusable/cards/CardPopularPizza'
 
 export default {
   components : {
-    PopularPizzaCard
+    CardPopularPizza
   },
 
   data(){

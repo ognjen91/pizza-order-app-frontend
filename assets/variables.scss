@@ -3,6 +3,11 @@
 // The variables you want to modify
 // $font-size-root: 20px;
 
-.redb {
-  border: 1px solid red;
-}
+
+
+$body-font-family: 'Poppins';
+$heading-font-family: 'Abril Fatface';
+$font-size-root: 18px;
+
+
+@import '~vuetify/src/styles/styles.sass';

@@ -54,7 +54,14 @@
 
   <v-spacer />
 
-    <nuxt-link :to="{name : 'cart'}" tag="v-icon"> mdi-cart </nuxt-link>
+    <!-- CART ICON -->
+    <nuxt-link :to="{name : 'cart'}" class='noDecoration'>
+      <!-- show cart icon with badge if there is an item in the cart -->
+      <v-badge :content="cartItemsNumber" v-if="cartItemsNumber"><v-icon class='color1'> mdi-cart </v-icon></v-badge>
+      <!-- show cart icon only if there is  no items in the cart -->
+      <v-icon v-else> mdi-cart </v-icon>
+
+    </nuxt-link>
     <!-- <v-icon></v-icon> -->
     <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
   </v-app-bar>
@@ -74,7 +81,6 @@
         clipped: false,
         drawer: false,
         right: true,
-        rightDrawer: false,
         title: 'Pizza Order App',
         items : [
           {
@@ -88,6 +94,12 @@
             icon : 'mdi-book-open-blank-variant'
           },
         ]
+      }
+    },
+
+    computed: {
+      cartItemsNumber(){
+        return this.$store.getters['cart/items'].length
       }
     }
 

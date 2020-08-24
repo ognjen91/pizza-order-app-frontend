@@ -1,3 +1,340 @@
+h1, h2, h3, h4, h5, h6 {
+  color: #6F2232;
+}
+
+p {
+  color: #000;
+}
+
+.color1 {
+  color: #6F2232 !important;
+}
+
+.color2 {
+  color: #950740 !important;
+}
+
+.color3 {
+  color: #C3073F !important;
+}
+
+.color4 {
+  color: #1A1A1A !important;
+}
+
+.color5 {
+  color: #1A1A1A !important;
+}
+
+.bg-color1 {
+  background-color: #6F2232 !important;
+}
+
+.bg-color2 {
+  background-color: #950740 !important;
+}
+
+.bg-color3 {
+  background-color: #C3073F !important;
+}
+
+.bg-color4 {
+  background-color: #1A1A1A !important;
+}
+
+.bg-color5 {
+  background-color: #1A1A1A !important;
+}
+
+.letter-spacing-1 {
+  letter-spacing: 1px;
+}
+
+.letter-spacing-2 {
+  letter-spacing: 2px;
+}
+
+.font-primary {
+  font-family: "Poppins", sans-serif !important;
+}
+
+.font-secondary {
+  font-family: "Abril Fatface", cursive !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Abril Fatface", cursive;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+}
+
+.noPointerEvents {
+  pointer-events: none;
+}
+
+.noListStyle {
+  list-style: none;
+}
+
+.noDecoration:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.flexCentered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexColumnCentered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cursorPointer {
+  cursor: pointer;
+}
+
+.cursorDefault {
+  cursor: default;
+}
+
+.rotated180 {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.noDecoration {
+  text-decoration: none;
+}
+.noDecoration:hover {
+  text-decoration: none;
+}
+
+.boxShadow {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.boxShadow:hover {
+  position: relative;
+  box-shadow: 0 32px 32px rgba(0, 0, 0, 0.32), 0 32px 32px rgba(0, 0, 0, 0.32);
+  z-index: 3;
+}
+
+.defaultShadow {
+  box-shadow: 0 6px 9px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.defaultShadow:hover {
+  position: relative;
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.32), 0 3px 4px rgba(0, 0, 0, 0.32);
+  z-index: 3;
+}
+
+.defaultShadowNoHover {
+  box-shadow: 0 6px 9px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.horizontalShadowSmall {
+  -webkit-box-shadow: 10px 0px 7px -2px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 10px 0px 7px -2px rgba(0, 0, 0, 0.4);
+  box-shadow: 10px 0px 10px -2px rgba(0, 0, 0, 0.4);
+}
+
+.horizontalShadowMedium {
+  -webkit-box-shadow: 15px 0px 10px -2px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 15px 0px 10px -2px rgba(0, 0, 0, 0.4);
+  box-shadow: 15px 0px 10px -2px rgba(0, 0, 0, 0.4);
+}
+
+.topShadow {
+  box-shadow: 0px 10px 5px #888, 0px -10px 5px #888;
+}
+
+.blub {
+  border: 1px solid blue;
+}
+
+.redb {
+  border: 1px solid red;
+}
+
+.greb {
+  border: 1px solid green;
+}
+
+.blab {
+  border: 1px solid black;
+}
+
+.yelb {
+  border: 1px solid yellow;
+}
+
+.border-color1 {
+  border-color: #6F2232;
+}
+
+.border-color2 {
+  border-color: #950740;
+}
+
+.border-color3 {
+  border-color: #C3073F;
+}
+
+.border-color4 {
+  border-color: #1A1A1A;
+}
+
+.border-1 {
+  border-width: 1px;
+}
+
+.border-2 {
+  border-width: 2px;
+}
+
+.border-3 {
+  border-width: 3px;
+}
+
+.cardPopularPizza .title {
+  font-size: 2rem;
+}
+
+.defaultSection {
+  padding: 3% 3%;
+}
+@media screen and (min-width: 600px) {
+  .defaultSection {
+    padding: 3% 5%;
+  }
+}
+@media screen and (min-width: 960px) {
+  .defaultSection {
+    padding: 2% 6%;
+  }
+}
+
+.homepageCaroselItem {
+  background-position: center;
+  background-size: cover;
+}
+
+.homepageCarousel .textHolder {
+  background-color: rgba(26, 26, 26, 0.4);
+}
+
+.homepageCarousel .textHolder .carouselMsg {
+  text-shadow: 2px 2px rgba(255, 255, 255, 0.6);
+}
+
+.homepageCaroselItem.active .carouselMsg {
+  -webkit-animation: fadeInLeft 0.5s forwards;
+  /* Safari 4+ */
+  -moz-animation: fadeInLeft 0.5s forwards;
+  /* Fx 5+ */
+  -o-animation: fadeInLeft 0.5s forwards;
+  /* Opera 12+ */
+  animation: fadeInLeft 0.5s forwards;
+  /* IE 10+, Fx 29+ */
+}
+
+.defaultSection.about {
+  padding: 5% 3% 3% 3%;
+}
+@media screen and (min-width: 600px) {
+  .defaultSection.about {
+    padding: 5% 7% 3% 7%;
+  }
+}
+@media screen and (min-width: 960px) {
+  .defaultSection.about {
+    padding: 5% 10% 5% 10%;
+  }
+}
+
+.defaultSection.about p {
+  font-size: 1.1rem;
+}
+@media screen and (min-width: 960px) {
+  .defaultSection.about p {
+    font-size: 1.25rem;
+  }
+}
+
+/* set initial opacity for fade in elements */
+.opacity-0 {
+  opacity: 0;
+}
+
+.opacity-0.fadeInLeft, .opacity-0.fadeInRight, .opacity-0.fadeInUp {
+  opacity: 1;
+}
+
+.animated.fadeInElement,
+.animated.fadeInLeftElement,
+.animated.fadeInRightElement,
+.animated.fadeInUpElement {
+  opacity: 0;
+}
+
+.fadeInElement.fadeIn {
+  -webkit-animation: fadeIn 0.5s forwards;
+  /* Safari 4+ */
+  -moz-animation: fadeIn 0.5s forwards;
+  /* Fx 5+ */
+  -o-animation: fadeIn 0.5s forwards;
+  /* Opera 12+ */
+  animation: fadeIn 0.5s forwards;
+  /* IE 10+, Fx 29+ */
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /* @charset "UTF-8"; */
 /*!
  * animate.css -http://daneden.me/animate
@@ -3036,269 +3373,6 @@
     -webkit-transition: none !important;
     transition: none !important;
   }
-}
-h1, h2, h3, h4, h5, h6 {
-  color: #6F2232;
-}
-
-p {
-  color: #000;
-}
-
-.color1 {
-  color: #6F2232 !important;
-}
-
-.color2 {
-  color: #950740 !important;
-}
-
-.color3 {
-  color: #C3073F !important;
-}
-
-.color4 {
-  color: #1A1A1A !important;
-}
-
-.color5 {
-  color: #1A1A1A !important;
-}
-
-.bg-color1 {
-  background-color: #6F2232 !important;
-}
-
-.bg-color2 {
-  background-color: #950740 !important;
-}
-
-.bg-color3 {
-  background-color: #C3073F !important;
-}
-
-.bg-color4 {
-  background-color: #1A1A1A !important;
-}
-
-.bg-color5 {
-  background-color: #1A1A1A !important;
-}
-
-.letter-spacing-1 {
-  letter-spacing: 1px;
-}
-
-.letter-spacing-2 {
-  letter-spacing: 2px;
-}
-
-.font-primary {
-  font-family: "Poppins", sans-serif !important;
-}
-
-.font-secondary {
-  font-family: "Abril Fatface", cursive !important;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Abril Fatface", cursive;
-}
-
-p {
-  font-family: "Poppins", sans-serif;
-}
-
-.noPointerEvents {
-  pointer-events: none;
-}
-
-.noListStyle {
-  list-style: none;
-}
-
-.noDecoration:hover {
-  text-decoration: none;
-  color: inherit;
-}
-
-.underline {
-  text-decoration: underline;
-}
-
-.flexCentered {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.flexColumnCentered {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.cursorPointer {
-  cursor: pointer;
-}
-
-.cursorDefault {
-  cursor: default;
-}
-
-.rotated180 {
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
-  transform: rotate(180deg);
-}
-
-.theodorusPagination {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.theodorusPagination .page-item .page-link {
-  color: #6F2232;
-}
-.theodorusPagination .page-item.active .page-link {
-  background-color: rgba(111, 34, 50, 0.7);
-  border: #6F2232;
-  color: #fff;
-  font-weight: 800;
-}
-
-.theodorusPagination .pagination {
-  margin: 0 !important;
-}
-
-.boxShadow {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-}
-.boxShadow:hover {
-  position: relative;
-  box-shadow: 0 32px 32px rgba(0, 0, 0, 0.32), 0 32px 32px rgba(0, 0, 0, 0.32);
-  z-index: 3;
-}
-
-.defaultShadow {
-  box-shadow: 0 6px 9px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-}
-.defaultShadow:hover {
-  position: relative;
-  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.32), 0 3px 4px rgba(0, 0, 0, 0.32);
-  z-index: 3;
-}
-
-.defaultShadowNoHover {
-  box-shadow: 0 6px 9px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-}
-.horizontalShadowSmall {
-  -webkit-box-shadow: 10px 0px 7px -2px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 10px 0px 7px -2px rgba(0, 0, 0, 0.4);
-  box-shadow: 10px 0px 10px -2px rgba(0, 0, 0, 0.4);
-}
-
-.horizontalShadowMedium {
-  -webkit-box-shadow: 15px 0px 10px -2px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 15px 0px 10px -2px rgba(0, 0, 0, 0.4);
-  box-shadow: 15px 0px 10px -2px rgba(0, 0, 0, 0.4);
-}
-
-.topShadow {
-  box-shadow: 0px 10px 5px #888, 0px -10px 5px #888;
-}
-
-.blub {
-  border: 1px solid blue;
-}
-
-.redb {
-  border: 1px solid red;
-}
-
-.greb {
-  border: 1px solid green;
-}
-
-.blab {
-  border: 1px solid black;
-}
-
-.yelb {
-  border: 1px solid yellow;
-}
-
-.border-color1 {
-  border-color: #6F2232;
-}
-
-.border-color2 {
-  border-color: #950740;
-}
-
-.border-color3 {
-  border-color: #C3073F;
-}
-
-.border-color4 {
-  border-color: #1A1A1A;
-}
-
-.border-1 {
-  border-width: 1px;
-}
-
-.border-2 {
-  border-width: 2px;
-}
-
-.border-3 {
-  border-width: 3px;
-}
-
-.homepageCaroselItem {
-  background-position: center;
-  background-size: cover;
-}
-
-.homepageCarousel .textHolder {
-  background-color: rgba(26, 26, 26, 0.4);
-}
-
-.homepageCarousel .textHolder .carouselMsg {
-  font-weight: 700;
-  text-shadow: 2px 2px rgba(0, 0, 0, 0.6);
-}
-
-.defaultSection {
-  padding: 3% 3%;
-}
-@media screen and (min-width: 600px) {
-  .defaultSection {
-    padding: 3% 5%;
-  }
-}
-@media screen and (min-width: 960px) {
-  .defaultSection {
-    padding: 2% 6%;
-  }
-}
-
-.homepageCaroselItem.active .carouselMsg {
-  -webkit-animation: fadeInLeft 0.5s forwards;
-  /* Safari 4+ */
-  -moz-animation: fadeInLeft 0.5s forwards;
-  /* Fx 5+ */
-  -o-animation: fadeInLeft 0.5s forwards;
-  /* Opera 12+ */
-  animation: fadeInLeft 0.5s forwards;
-  /* IE 10+, Fx 29+ */
 }
 
 /*# sourceMappingURL=app.css.map */

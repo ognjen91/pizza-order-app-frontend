@@ -11,13 +11,15 @@
         <HomepageCarousel class='' />
       </v-flex>
 
+      <v-flex xs12 class='defaultSection about'>
+        <HomepageAboutUs />
+      </v-flex>
+
+      
       <v-flex xs12 class='defaultSection'>
         <HomepageMostPopularContent />
       </v-flex>
 
-      <v-flex xs12 class='defaultSection'>
-        <HomepageAboutUs />
-      </v-flex>
 
 
     </v-row>

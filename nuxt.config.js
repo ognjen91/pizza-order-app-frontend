@@ -1,4 +1,6 @@
 import colors from 'vuetify/es5/util/colors'
+require('dotenv').config()
+
 
 export default {
   /*
@@ -25,7 +27,7 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: "https://fonts.googleapis.com/css?family=Cinzel|Josefin+Sans"},
+      { rel: 'stylesheet', href: "https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins"},
     ]
   },
   /*
@@ -39,6 +41,8 @@ export default {
   ** https://nuxtjs.org/guide/plugins
   */
   plugins: [
+    { src : '@/plugins/inView.js', ssr: false},
+
   ],
   /*
   ** Auto import components
@@ -58,39 +62,38 @@ export default {
   */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    '@nuxtjs/dotenv',
   ],
   /*
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options
   */
-  axios: {},
+  axios: {
+    baseURL : process.env.BACKEND_URL + '/api/',
+    proxyHeaders: false,
+    credentials: false
+  },
   /*
   ** vuetify module configuration
   ** https://github.com/nuxt-community/vuetify-module
   */
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
+    defaultAssets: {
+        font: false
+      },
+      treeShake: true,
     theme: {
-      dark: false,
       light : true,
       themes: {
-        dark: {
-          primary: colors.blue.darken2,
-          accent: colors.grey.darken3,
-          secondary: colors.amber.darken3,
-          info: colors.teal.lighten1,
-          warning: colors.amber.base,
-          error: colors.deepOrange.accent4,
-          success: colors.green.accent3
-        },
         light: {
           primary: '#3f51b5',
           secondary: '#b0bec5',
           accent: '#8c9eff',
           error: '#b71c1c',
         },
-      }
+      },
     }
   },
   /*

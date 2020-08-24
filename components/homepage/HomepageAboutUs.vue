@@ -1,16 +1,20 @@
 <template>
-  <v-row>
+  <v-row class="">
     <v-col cols="12">
 
-      <h2 class='display-2 font-secondary'>Ognjen's pizza house</h2>
+      <h1 class='display-2 font-secondary text-center mb-5  animated pulseElement'>
+        Ognjen's pizza house
+      </h1>
 
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-         ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-         ullamco laboris nisi ut aliquip ex ea commodo consequat.
-         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-         nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-         mollit anim id est laborum.
+      <p class='text-center font-primary'>
+        <span class="animated fadeInUpElement">
+        Many people believe that web developers can not make good pizza.
+        Yes, web developers are good at eating pizza, but making? Huh... <br>
+        </span>
+        <span class="color3 my-2  animated fadeInUpElement">Well, they are totally wrong.</span> <br>
+        <span class="color3 my-2 text-h3 font-primary  animated fadeInUpElement">
+          Web developers make great pizza.
+        </span>
       </p>
 
 

@@ -1,0 +1,45 @@
+/* set initial opacity for fade in elements */
+.opacity-0{
+  opacity: 0;
+}
+
+.opacity-0.fadeInLeft, .opacity-0.fadeInRight, .opacity-0.fadeInUp{
+  opacity: 1;
+}
+
+.animated.fadeInElement,
+.animated.fadeInLeftElement,
+.animated.fadeInRightElement,
+.animated.fadeInUpElement{
+  opacity: 0;
+}
+
+.fadeInElement.fadeIn{
+  -webkit-animation: fadeIn .5s forwards; /* Safari 4+ */
+  -moz-animation:    fadeIn .5s forwards; /* Fx 5+ */
+  -o-animation:      fadeIn .5s forwards; /* Opera 12+ */
+  animation:         fadeIn .5s forwards; /* IE 10+, Fx 29+ */
+}
+
+
+
+
+
+
+
+@-moz-keyframes fadeIn {
+   0%   {opacity: 0;}
+   100% {opacity: 1;}
+}
+@-webkit-keyframes fadeIn {
+  0%   {opacity: 0;}
+  100% {opacity: 1;}
+}
+@-o-keyframes fadeIn {
+  0%   {opacity: 0;}
+  100% {opacity: 1;}
+}
+@keyframes fadeIn {
+  0%   {opacity: 0;}
+  100% {opacity: 1;}
+}

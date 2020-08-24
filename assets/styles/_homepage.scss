@@ -1,3 +1,16 @@
+//default styles for homepage
+.defaultSection{
+  padding: 3% 3%;
+
+  @media screen and (min-width: $sm){
+    padding: 3% 5%;
+  }
+  @media screen and (min-width: $md){
+    padding: 2% 6%;
+  }
+}
+
+// CAROUSEL SECTION
 .homepageCaroselItem{
   background-position: center;
   background-size: cover;
@@ -9,24 +22,11 @@
 }
 
 .homepageCarousel .textHolder .carouselMsg{ //message
-  font-weight: 700;
-  text-shadow: 2px 2px rgba(#000, 0.6);
+  // font-weight: 700;
+  text-shadow: 2px 2px rgba(#fff, 0.6);
 }
 
 
-.defaultSection{
-  padding: 3% 3%;
-
-  @media screen and (min-width: $sm){
-    padding: 3% 5%;
-  }
-  @media screen and (min-width: $md){
-    padding: 2% 6%;
-  }
-  // @media screen and (min-width: $md){
-  //   padding: 2% 6%;
-  // }
-}
 
 
 .homepageCaroselItem.active .carouselMsg{
@@ -34,4 +34,28 @@
   -moz-animation:    fadeInLeft .5s forwards; /* Fx 5+ */
   -o-animation:      fadeInLeft .5s forwards; /* Opera 12+ */
   animation:         fadeInLeft .5s forwards; /* IE 10+, Fx 29+ */
+}
+
+
+
+// ABOUT US SECTION
+
+.defaultSection.about{
+  padding: 5% 3% 3% 3%;
+
+  @media screen and (min-width: $sm){
+    padding: 5% 7% 3% 7%;
+  }
+  @media screen and (min-width: $md){
+    padding: 5% 10% 5% 10%;
+  }
+}
+
+.defaultSection.about p{
+  font-size: 1.1rem;
+
+  @media screen and (min-width: $md){
+    font-size: 1.25rem;
+
+  }
 }
