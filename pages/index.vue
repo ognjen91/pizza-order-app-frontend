@@ -33,7 +33,9 @@ import HomepageAboutUs from '@/components/homepage/HomepageAboutUs'
 
 export default {
   components: {
-    HomepageCarousel
+    HomepageCarousel,
+    HomepageMostPopularContent,
+    HomepageAboutUs
   },
 
 

@@ -7,6 +7,8 @@ export const state = () => ({
 
 export const getters = {
     pizzas : state => state.pizzas,
+    getPizzaBySlug : state => (slug) => state.pizzas.find(pizza => pizza.slug == slug),
+    getPizzaById : state => (id) => state.pizzas.find(pizza => pizza.id == id),
     //sorting
     pizzasSortedByOrders : state => (numberOfItems = 5) => {
       // console.log(numberOfItems);
@@ -16,8 +18,23 @@ export const getters = {
       });
       // return exact number
       return pizzas.slice(0, numberOfItems)
-
     },
+    getPizzaPrice : state => (id,size) => {
+      let thePizza  = state.pizzas.find(pizza => pizza.id == id)
+      return thePizza.options[size].price
+    },
+
+    pizzasSortedByTitle : state => (order) => {
+      let pizzas = [...state.pizzas]
+      pizzas.sort(function(a, b) {
+        return order == 'asc'? a['title'] > b['title'] : b['title'] > a['title'];
+      });
+
+      console.log(pizzas)
+      return pizzas
+    },
+
+
     spices : state => state.spices
 }
 

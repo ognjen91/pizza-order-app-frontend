@@ -1,7 +1,7 @@
 <template>
   <v-row class=''>
     <v-col cols="12" sm="10">
-      <h1 class='text-center text-sm-left animated fadeInUpElement'>Most Popular Pizzas In Town</h1>
+      <h1 class='text-center text-sm-left animated pulseElement'>Most Popular Pizzas In Town</h1>
     </v-col>
 
     <!-- get desired number of items -->

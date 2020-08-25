@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="cardCartPart">
     <!--
   !!!!  i is the size !!!!
    -->
@@ -24,20 +24,19 @@
         v-if="$store.getters['cart/numberOfItemsOfSameTypeAndSizeInCart'](id, i)"
         :content="$store.getters['cart/numberOfItemsOfSameTypeAndSizeInCart'](id, i)"
         >
-        <span class="color2 text-no-wrap">
+        <span class="color4 text-no-wrap">
         {{i}}
         <!-- : {{$store.getters['cart/allItemsOfSameTypeAndSizeInCartAreTheSame'](id, i)}} -->
         </span>
         </v-badge>
 
         <!-- TITLE ONLY IF THERE ARE NO ITEMS OF THE PIZZA WITH THE SIZE IN SHOPPING CART -->
-        <span class="color2  text-no-wrap" v-else>
+        <span class="color4  text-no-wrap" v-else>
           {{i}}
         </span>
         <!-- <v-chip inline>
         </v-chip> -->
 
-        <!-- <strong>{{$store.getters['cart/numberOfItemsOfSameTypeAndSizeInCart'](id, i)}}</strong> -->
       </v-col>
       <v-col cols="2" class='text-left text-no-wrap' >
         {{option.price}} &euro;

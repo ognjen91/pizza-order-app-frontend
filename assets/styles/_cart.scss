@@ -1,0 +1,14 @@
+.cartPriceHolder{
+  position: fixed;
+  bottom: 0;
+  padding: 2rem;
+  z-index: 3;
+  width: 100%;
+  background-color: #fff;
+
+  @media screen and (min-width: $md){
+    bottom: initial;
+    width: 25%;
+
+  }
+}

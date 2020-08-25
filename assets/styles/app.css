@@ -23,7 +23,7 @@ p {
 }
 
 .color5 {
-  color: #1A1A1A !important;
+  color: #4E4E50 !important;
 }
 
 .bg-color1 {
@@ -215,8 +215,21 @@ p {
   font-size: 2rem;
 }
 
+.cardPopularPizza .cardCartPart .sizeTitle {
+  color: #950740;
+}
+
+.cardPopularPizza .cardCartPart .addToCartIcon {
+  color: #950740;
+}
+
 .removeItemIcon.inactive {
   opacity: 0.5;
+}
+
+.cardPizzaMenuItemPizza .cardCartPart {
+  background-color: #fff;
+  border: 3px solid #fff;
 }
 
 .defaultSection {
@@ -277,6 +290,46 @@ p {
 @media screen and (min-width: 960px) {
   .defaultSection.about p {
     font-size: 1.25rem;
+  }
+}
+
+.pizzasPage .cardPizzaMenuItemHolder:nth-of-type(2n) .cardPizzaMenuItem .itemData {
+  background: #950740;
+  background: linear-gradient(180deg, #950740 0%, #950740 95%, white 100%);
+  color: #fff;
+}
+@media screen and (min-width: 960px) {
+  .pizzasPage .cardPizzaMenuItemHolder:nth-of-type(2n) .cardPizzaMenuItem .itemData {
+    background: #fff;
+    color: #950740;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .pizzasPage .cardPizzaMenuItemHolder:nth-of-type(4n) .cardPizzaMenuItem .itemData,
+.pizzasPage .cardPizzaMenuItemHolder:nth-of-type(4n+1) .cardPizzaMenuItem .itemData {
+    background: #950740;
+    background: linear-gradient(180deg, #950740 0%, #950740 95%, white 100%);
+    color: #fff;
+  }
+}
+
+.pizzasPage .cardPizzaMenuItemHolder .cardPizzaMenuItem, .cardPizzaMenuItemPizza .cardCartPart {
+  border: 2px solid rgba(149, 7, 64, 0.2);
+}
+
+.cartPriceHolder {
+  position: fixed;
+  bottom: 0;
+  padding: 2rem;
+  z-index: 3;
+  width: 100%;
+  background-color: #fff;
+}
+@media screen and (min-width: 960px) {
+  .cartPriceHolder {
+    bottom: initial;
+    width: 25%;
   }
 }
 

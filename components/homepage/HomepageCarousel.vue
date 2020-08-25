@@ -63,6 +63,7 @@
           colorClass : 'color1'
         },
         {
+          // text : "We googled pizza recipes grannies told us a secret about the best pizza",
           text : "Italian grannies told us a secret about the best pizza",
           image : this.windowWidth > 768? require('@/assets/images/carousel/old-recipe.png') : require('@/assets/images/carousel/old-recipe-small.png'),
           colorClass : 'color2'

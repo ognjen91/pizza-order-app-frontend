@@ -32,6 +32,22 @@
     fixed
     app
   >
+
+
+  <nuxt-link
+  :to="{ path: '/'}"
+  class="noDecoration mx-3"
+  >
+  <v-toolbar-title v-text="title" />
+  </nuxt-link>
+
+  <nuxt-link
+  :to="{ name: 'pizzas'}"
+  class="noDecoration mx-3"
+  >
+  Full Menu
+  </nuxt-link>
+
     <!-- <v-btn
       icon
       @click.stop="miniVariant = !miniVariant"
@@ -50,7 +66,6 @@
     >
       <v-icon>mdi-minus</v-icon>
     </v-btn> -->
-    <v-toolbar-title v-text="title" />
 
   <v-spacer />
 

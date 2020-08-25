@@ -1,8 +1,27 @@
+// CARD POPULAR PIZZA
+
 .cardPopularPizza .title{
   font-size: 2rem;
 }
 
+.cardPopularPizza .cardCartPart .sizeTitle{
+  color: $color2;
+}
+
+.cardPopularPizza .cardCartPart .addToCartIcon{
+  color: $color2;
+}
+
+
 
 .removeItemIcon.inactive{
   opacity: .5;
+}
+
+
+//CARD MENU ITEM
+
+.cardPizzaMenuItemPizza .cardCartPart{
+  background-color: #fff;
+  border: 3px solid #fff;
 }
