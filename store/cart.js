@@ -37,7 +37,7 @@ export const getters = {
       // console.log( JSON.stringify(comparable),  JSON.stringify(clonedItem), JSON.stringify(comparable) !== JSON.stringify(clonedItem))
       return JSON.stringify(comparable) !== JSON.stringify(clonedItem);
     })
-  }
+  },
 }
 
 //mutations

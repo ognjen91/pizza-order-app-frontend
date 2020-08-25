@@ -30,8 +30,22 @@ export const getters = {
         return order == 'asc'? a['title'] > b['title'] : b['title'] > a['title'];
       });
 
-      console.log(pizzas)
+      // console.log(pizzas)
       return pizzas
+    },
+
+
+    //return pizzas fro array of ids
+    /**
+     * [pizzasFromArrayOfIds description]
+     * @param  {[Array]} ids [array of [pizzas ids]]
+     * @return {[type]}       [description]
+     */
+
+    pizzasFromArrayOfIds : state => (ids) => {
+      return state.pizzas.filter(pizza=>{
+        return ids.includes(pizza.id)
+      })
     },
 
 
@@ -55,7 +69,7 @@ export const mutations = {
     // console.log('fetch')
     // pizzaToSet? (!"fullLoaded" in pizzaToSet? Object.assign(pizzaToSet, pizza) : null) : (state.pizzas = [...state.pizzas, pizza])
     if(pizzaToSet){
-      console.log(1)
+      // console.log(1)
       console.log(Object.assign(pizzaToSet, pizza) )
 
       // console.log("fullyLoaded" in pizzaToSet, pizzaToSet, pizza)
